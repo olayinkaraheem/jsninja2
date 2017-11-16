@@ -130,8 +130,7 @@ const game = {
 		view.hide(view.result);
 		view.render(view.info, `End of Quiz. You are ${(this.score/this.questAsked*100).toFixed(2)}% correct. You scored ${this.score} point${this.score !== 1 ? 's' : ''} of ${this.questAsked}.`);
 
-		let bye = new Function("return 'Saying Bye';");
-		alert(bye());
+		
 
 		view.tearDown();
 	}
